@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quizopedia</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/popup.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <p id="your-score">Your score:</p>
+        <p id="finalScore"></p>
+        <button type="submit" class="btn-view" onclick="openPopup()">View Correct Answers</button>
+        <div class="popup" id="popup">
+          <img src="quizpics/qna.webp" alt="">
+          <div class="popup-content">
+         <div class="Question__containers">
+           <div class="question-container1">
+          <h4>Q. Is 2 the only even prime number ?</h4> <br>
+          <p>Correct answer- True</p>
+
+          <h4>Q. For which Galileo is famous ?</h4> <br>
+          <p>Correct answer- All of the Above <br>Reason- Galileo is famous for all of the above options: developing the telescope, discovering four satellites of Jupiter, and demonstrating the consistent time measurement with the swinging motion of the pendulum, contributing significantly to astronomy and physics.</p>
+
+          <h4>Q. Sharks are mammals.</h4> <br>
+          <p>Correct answer- False <br>Reason- Sharks are not mammals; they are cartilaginous fish, characterized by their skeleton made of cartilage rather than bone.</p>
+
+          <h4>Q. Which country is considered the birthplace of cricket ?</h4> <br>
+          <p>Correct answer- England <br>Reason- England is considered the birthplace of cricket, with the sport originating there during the 16th century.</p>
+
+          <h4>Q. Who among the following open the sea route between India and Europe ?</h4> <br>
+          <p>Correct answer- Vasca Da Gama <br>Reason- Vasco da Gama, who opened the sea route between Europe and India via the Cape of Good Hope in the late 15th century, facilitating trade and exploration.</p>
+        </div>
+        <div class="question-container2">
+          <h4>Q. Which planet in the solar system is known as the “Red Planet” ?</h4> <br>
+          <p>Correct answer- Mars <br>Reason- Mars is known as the "red planet" due to its rusty red appearance, caused by iron oxide (rust) on its surface.</p>
+
+          <h4>Q. What gas is used to extinguish fires ?</h4> <br>
+          <p>Correct answer- Carbon Dioxide <br>Reason- Carbon dioxide (CO2) is used to extinguish fires as it displaces oxygen, thereby suffocating the flames.</p>
+
+          <h4>Q. What animal is the national symbol of Australia ?</h4> <br>
+          <p>Correct answer- Kangaroo <br>Reason- The national symbol of Australia is the kangaroo. It is featured on the Australian coat of arms and represents the unique wildlife of the continent.</p>
+
+          <h4>Q. Who directed the movie 'Life is Beautiful' ? </h4> <br>
+          <p>Correct answer- Roberto Benigni <br>Reason- The movie "Life is Beautiful" was directed by Roberto Benigni, known for its poignant portrayal of the human spirit amidst the horrors of the Holocaust.</p>
+
+          <h4>Q. What does 'Carpe Diem' mean in Latin ?</h4> <br>
+          <p>Correct answer- Sieze the day <br>Reason- "Carpe Diem" means "seize the day" in Latin, emphasizing the importance of living in the present moment and making the most out of life.</p>
+        </div>
+      </div>
+    </div>
+      <center>
+        <button type="button" onclick="closePopup()">Ok</button>
+      </center>
+        </div>
+
+        <a class="btn" href="feedback.html">Next</a>
+      </div>
+    </div>
+    <script src="end.js"></script>
+    <script>
+      let popup = document.getElementById("popup");
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function closePopup() {
+        popup.classList.remove("open-popup");
+      }
+    </script>
+  </body>
+</html>

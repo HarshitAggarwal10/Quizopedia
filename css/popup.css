@@ -1,0 +1,94 @@
+  .popup {
+    width: 1500px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: left;
+    padding: 0 30px 30px;
+    color: #060303;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    overflow-y: 80vh;
+    max-height: 100vh;
+    z-index: 2;
+    
+  }
+  
+  .open-popup {
+    visibility: visible;
+    top: 55%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .popup img{
+    width: 100px;
+    margin-top: -50px;
+    margin-left: 45%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgb(21,21,100);
+  }
+  
+  .popup button {
+    width: 20%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgb(21,21,100);
+  }  
+
+  #popup div{
+    display: flex;
+  }
+  
+  .Question__containers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .question-container1 {
+    flex-direction: column;
+    width: 48%;
+    height: 45%;
+    display: flex;
+  }
+  
+  .question-container2 {
+    flex-direction: column;
+    display: flex;
+    width: 48%;
+    height: 45%;
+    padding-left: 5%;
+  }
+  
+  
+  .popup-content {
+    max-height: 70vh; /* Adjust as needed */
+    overflow-y: auto; /* Enable vertical scrollbar */
+  }
+
+  .popup-content.Question__containers.question-container1,.popup-content.Question__containers.question-container2 h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 5%;
+  }
+
+  h4{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 3%;
+  }
+
+  p{
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
